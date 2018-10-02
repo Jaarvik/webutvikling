@@ -1,0 +1,157 @@
+
+#bodyindex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "aside main main main"
+        "footer footer footer footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+header {
+
+    grid-area: header;
+    background-image: url("headerimage.jpg");
+    background-size: 100%;
+    border: solid 1px;
+    margin-top: 3px;
+
+    
+    
+    
+}
+
+#navigasjon {
+
+    grid-area: nav;
+    padding: 15px;
+    margin: 10px;
+
+    
+}
+
+nav a {
+
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    color: black;
+
+    
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+#sidekolonne {
+
+    grid-area: aside;
+    border: solid 1px;
+    background-color: rgb(149, 233, 233);
+    padding: 0;
+    
+    
+}
+
+#sidekolonne>section>iframe {
+    
+    width: 100%;
+}
+
+#linkerResponsiv>a {
+
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+    color: black;
+    
+}
+
+#hovedboks {
+    width: 100%;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.artikkel {
+    grid-area: main;
+    width: 33%;
+    background-color: lightgray;
+    border: solid 1px;
+    text-align: center;
+    margin-left: 2.6px;
+    
+}
+
+#knappGitHub {
+
+    margin: 2px;
+    padding: 10px;
+}
+
+#knappGitHub>a {
+
+    text-decoration: none;
+    margin: 2px;
+    border: solid black;
+    color: white;
+    background-color: black;
+
+
+}
+
+#footer {
+
+    grid-area: footer;
+    border: solid 1px;
+    background-image: url("headerimage.jpg");
+    padding: 3px;
+    margin: 3px;
+}
+
+/*Her kommer css til mediatyper*/
+
+#bodyMedia{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main image"
+        "footer footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainArtikkelMedia{
+
+    grid-area: main;
+    margin-left: 20px;
+}
+
+#medietyper{
+
+    grid-area: image;
+    max-width: 75%;
+    margin-left: 10vh;
+   
+
+}
